@@ -16,42 +16,116 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <title>Arohan Mishra</title>
-
   </head>
+
   <body style = "background-image: linear-gradient(180deg, #D1D2D4 0%, #FFFFFF 100%);">
-    <nav class="navbar navbar-dark" style="background-color: #161A32;">
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-dark " style="background-color: #161A32;"s id = "topbar" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
               <img src="images/AROHANWEBSITELOGO 1.png" alt="" width="150" height="50">
           </a>
           </div>
-          <!--button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button-->
           <div id="navbarNav">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="about.html"><span class="v5_13">ABOUT ME</span></a></li>
-              <li><a href="resume.html"><span class="v5_14">RESUME</span></a></li>
-              <li><a href="contact.html"><span class="v5_15">CONTACT</span></a></li>
+              <li><a href="#about"><span class="va">ABOUT ME</span></a></li>
+              <li><a href="#resume"><span class="vr">RESUME</span></a></li>
+              <li><a href="#contact"><span class="vc">CONTACT</span></a></li>
             </ul>
           </div>
       </div>
   </nav>
 
-    <div class="v1_3">
-      <div class="v2_2">
+
+  <!--home-->
+  <div class="v1_1">
+
+
+      <div class="v1_2">
           <img src = "images/resume (2) 1.png" width="70%" height="70%">
       </div>
-      <span class="v2_7">
+      <span class="v1_3">
         <h1>I’m AROHAN MISHRA</h1>
         <br>
         <h3 style = "color: #494C5E;">/programmer</h3>
         <h3 style = "color: #494C5E;">/designer</h3>
         <h3 style = "color: #494C5E;">/youtuber</h3>
         <h3 style = "color: #494C5E;">/movie buff</h3>
+        <br><br>
+        <a class = "git" href = "https://github.com/arohan-mishra">
+          <img src = "images/github 1.png" width = "50" height = "50" alt = "git">
+        </a>
+        <a class = "link" href = "https://www.linkedin.com/in/arohan-mishra-8b60111b3/">
+          <img src = "images/LinkedIn.png" width = "50" height = "50" alt = "link">
+        </a>           
+        <a class = "mail" href = "mailto:arohanmishra925@gmail.com">
+          <img src = "images/mail.png" width = "50" height = "50" alt = "mail">
+        </a>
     </span>
+
+
+  <!--about-->
+    <div id = "about">
+      <div class = "v2_1">
+        <h1>ABOUT ME</h1>
+        <div class = "vpara">
+          <p>I am Arohan Mishra, a B.Tech
+          Computer Science student at VIT
+          Vellore.</p>
+          <p>
+          I like to explore new domains
+          and technologies to solve real-life
+          problems. </p>
+          <p>
+          I also have a keen interest in designing. I hope that, one day my skills can be beneficial for
+          society.
+          </p>
+
+          <br><br><br>
+          <p><i>"However difficult life may seem, there is always something you can do and succeed at."</i></p>
+        </div>
+
+        <div class="rect" id = "shape"></div>
+
+        <div class="v2left" id = "hobbies">
+          <h2>Hobbies</h2>
+          <span class="vpara">
+            <p>Listening Music</p>
+            <p>Astrophotography</p>
+            <p>Running, Chess</p>
+          </span>
+        </div>
+
+        <div class="v2right" id = "languages">
+          <h2>Languages</h2>
+          <span class="vpara">
+            <p>English</p>
+            <p>Hindi</p>
+            <p>Telugu</p>
+          </span>
+        </div>
+      </div>
     </div>
 
+
+
+  </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("topbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
   </body>
 </html>
