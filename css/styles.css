@@ -44,9 +44,14 @@
   }
 
   .links{
-    :link {color: rgba(73,76,94,1);;text-decoration:none;}
-    :visited {color: rgba(73,76,94,1);;text-decoration:none;}
-    :hover {font-size:150%;}
+    color: #494C5E;
+    text-decoration:none;
+    line-height: 50%;
+  }
+
+  .links:hover{
+    color: #212529;
+    font-size: 115%;
   }
 
   .v1_1 {
@@ -463,7 +468,7 @@
     text-align: center;
   }
   
- .poems {
+  .poems {
     width: 700px;
     color: url("../images/v2_7.png");
     position: absolute;
