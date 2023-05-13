@@ -1,5 +1,2 @@
 # arohan-mishra.github.io
-its bad ik
-
-
-arohan-mishra.github.io
+Original Template by [Sadee](https://github.com/codewithsadee/vcard-personal-portfolio)
