@@ -861,6 +861,38 @@ h3 em {
   text-align: right;
 }
 
+.footer-links {
+  text-align: left;
+}
+
+.footer-links > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #77786f;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-links div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 22px;
+}
+
+.footer-links a {
+  color: var(--paper);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .footer-bottom {
   margin-top: 55px;
   padding-top: 17px;
@@ -993,5 +1025,13 @@ h3 em {
 
   .footer-note {
     text-align: left;
+  }
+
+  .footer-links {
+    text-align: left;
+  }
+
+  .footer-links div {
+    justify-content: flex-start;
   }
 }
